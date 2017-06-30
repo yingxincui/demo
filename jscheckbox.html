@@ -1,0 +1,79 @@
+
+<html>
+<meta charset="utf-8">
+<style>
+	div {width:150px;
+		background: pink;
+		margin:30px;
+		
+	}
+	button{
+		margin:20px;
+		height:30px;
+		width:100px;
+		color:white;
+		background:black ;
+	}
+</style>
+
+<script>
+
+function aa(){
+	let r=document.getElementsByTagName("input");
+	//input is tagname
+	for (let i=0;i<r.length;i++){
+		if (r[i].checked) {
+			alert(r[i].nextSibling.nodeValue)
+			//nodevalue is the text 选项（一
+			
+		}
+	}
+};
+
+
+
+var counts=0;
+function bb(){
+	let r=document.getElementsByTagName("input");
+	for (var i=0;i<r.length;i++){
+		if (r[i].checked){
+			counts++;		
+		}
+		
+	}
+	alert(counts);
+	//alert should outside for cycle
+	
+};
+
+
+
+function cc(){
+	//select all the checkbox by cycle
+	let r=document.getElementsByTagName("input");
+	for (var i=0;i<r.length;i++){
+		r[i].checked=true;
+	}
+}
+</script>
+<div id="all">
+<p><label><input type="checkbox" />　选项（一）</label></p>
+<p><label><input type="checkbox" />　选项（二）</label></p>
+<p><label><input type="checkbox" />　选项（三）</label></p>
+<p><label><input type="checkbox" />　选项（四）</label></p>
+<p><label><input type="checkbox" />　选项（五）</label></p>
+<p><label><input type="checkbox" />　选项（六）</label></p>
+<p><label><input type="checkbox" />　选项（七）</label></p>
+<p><label><input type="checkbox" />　选项（八）</label></p>
+<p><label><input type="checkbox" />　选项（九）</label></p>
+<p><label><input type="checkbox" />　选项（十）</label></p>
+</div>
+
+<button onclick="aa()" id="all">node value</button>
+<button onclick="bb()">counts</button>
+<button onclick="cc()">all</button>
+<footer>
+	 <p>Posted by: minjie</p>
+  <p>Contact information: <a href="mailto:529704243@qq.com">529704243@qq.com</a>.</p>
+</footer>
+</html>
