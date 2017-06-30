@@ -1,0 +1,58 @@
+
+<html>
+<meta charset="utf-8">
+<style>
+	div {width:150px;
+		background: pink;
+		margin:30px;
+		
+	}
+	button{
+		margin:20px;
+		height:30px;
+		width:100px;
+		color:white;
+		background:black ;
+	}
+</style>
+
+<div>
+<p><label><input type="checkbox" />　选项（一）</label></p>
+<p><label><input type="checkbox" />　选项（二）</label></p>
+<p><label><input type="checkbox" />　选项（三）</label></p>
+<p><label><input type="checkbox" />　选项（四）</label></p>
+<p><label><input type="checkbox" />　选项（五）</label></p>
+<p><label><input type="checkbox" />　选项（六）</label></p>
+<p><label><input type="checkbox" />　选项（七）</label></p>
+<p><label><input type="checkbox" />　选项（八）</label></p>
+<p><label><input type="checkbox" />　选项（九）</label></p>
+<p><label><input type="checkbox" />　选项（十）</label></p>
+
+</div>
+
+<button id="all">ALL</button>
+<button id="noall">NOT ALL</button>
+<footer>
+	 <p>Posted by: minjie</p>
+  <p>Contact information: <a href="mailto:529704243@qq.com">529704243@qq.com</a>.</p>
+</footer>
+</html>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(function(){
+	$("#all").on("click",function(){
+		$("input:checkbox").slice(0,11).attr("checked",true)
+	})
+})
+
+$(function(){
+	$("#noall").on("click",function(){
+		$("input:checkbox").slice(0,11).attr("checked",false);
+	})
+})
+
+
+
+
+</script>
