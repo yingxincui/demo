@@ -15,7 +15,25 @@
 		background:black ;
 	}
 </style>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(function(){
+	$("#all").on("click",function(){
+		$("input:checkbox").each(function(){
+			$(this).attr("checked",true);
+		})
+	})
+})
 
+$(function(){
+	$("#noall").on("click",function(){
+		$("input:checkbox").each(function(){
+			$(this).attr("checked",false);
+		})
+	})
+})
+</script>
 <div>
 <p><label><input type="checkbox" />　选项（一）</label></p>
 <p><label><input type="checkbox" />　选项（二）</label></p>
@@ -27,7 +45,6 @@
 <p><label><input type="checkbox" />　选项（八）</label></p>
 <p><label><input type="checkbox" />　选项（九）</label></p>
 <p><label><input type="checkbox" />　选项（十）</label></p>
-
 </div>
 
 <button id="all">ALL</button>
@@ -37,22 +54,3 @@
   <p>Contact information: <a href="mailto:529704243@qq.com">529704243@qq.com</a>.</p>
 </footer>
 </html>
-<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
-</script>
-<script>
-$(function(){
-	$("#all").on("click",function(){
-		$("input:checkbox").slice(0,11).attr("checked",true)
-	})
-})
-
-$(function(){
-	$("#noall").on("click",function(){
-		$("input:checkbox").slice(0,11).attr("checked",false);
-	})
-})
-
-
-
-
-</script>
