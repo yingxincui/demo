@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			li {
+				display:block;
+				float:left;
+				margin:2px;
+				width:70px;
+				
+			}
+			#L1 {
+				background: yellow;
+				
+			}
+			#L2 {
+				background: greenyellow;
+				
+			}
+			#L3 {
+				background: bisque;
+			}
+			#L4 {
+				background: brown;
+			}
+			#d1 {
+				background: yellow;
+				clear:both;
+				margin-left:40px;
+				width:300px;
+				height:300px;
+				
+			}
+			#d2 {
+				background: bisque;
+				clear:both;
+				margin-left:40px;
+				width:300px;
+				height:300px;
+				
+			}
+			#d3 {
+				background: brown;
+				clear:both;
+				margin-left:40px;
+				width:300px;
+				height:300px;
+				
+			}
+			p {
+				margin:10px;
+				line-height:20px ;
+			}
+		</style>
+		
+<script>
+function Tab(num)
+{
+    var i;
+    
+    for(i=1;i<=4;i++)
+    {
+        if(i==num)
+           document.getElementById("d"+i).style.display="block";
+         else
+           document.getElementById("d"+i).style.display="none";
+          //none means do not display
+    }
+}
+</script>
+	</head>
+	<body>
+<div id="head">
+<ul>
+ <li id="L1" onclick="Tab(1)"><a href="#">唐诗</a></li>
+ <li id="L2" onclick="Tab(2)"><a href="#">宋词</a></li>
+ <li id="L3" onclick="Tab(3)"><a href="#">元曲</a></li>
+ <li id="L4" onclick="Tab(4)"><a href="#">考试信息</a></li>
+</ul>
+</div>
+
+<div id="d1">
+	<p>寥落古行宫，宫花寂寞红。
+白头宫女在，闲坐说玄宗。</p>
+</div>
+<div id="d2">
+	早已空虚冷寞的古行宫，<br>
+　　零落宫花依然开行艳红。<br>
+　　有几个满头白发的宫女，<br>
+　　闲坐谈论当年的唐玄宗。<br>
+</div>
+
+<div id="d3">
+	酒泉子（十之一）
+长忆钱塘，不是人寰是天上。万家掩映翠微间。处处水潺潺。 
+异花四季当窗放。出入分明在屏障。别来隋柳几经秋。何日得重游。
+</div>
+	<body>
+	</body>
+</html>
