@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<style>
+	*{
+	margin:0;
+	padding:0;
+}
+	div {
+		width:400px;
+		background: pink;
+		margin:50px auto; /* make it in the center*/
+		padding:40px 80px;/* 40 means top and bottom ,while 80 means left and right*/
+		
+	}
+	body{
+    font-family:Microsoft YaHei;
+}
+	span {
+		float:right;
+	}
+	ul {
+		font-size:40px;
+	}
+	li {
+		list-style-type: none;
+	}
+	ul li {
+
+		margin-top:5px;
+		margin-right:35px;
+		background:palegreen;
+	}
+ul li.active{
+    background-color:yellow;
+}
+p {
+	font-size:40px;
+	margin:10px 35px;
+	background: pink;
+	
+}
+
+</style>
+<div id="main" v-cloak>
+	<ul>
+		<li v-for="item in items" v-on:click="toggleActive(item)" v-bind:class="{'active':item.active}">
+			<!--v-bind的意思是说如果item.active是true，那么li就有<class="active">这个属性，否则就没有。这个是根据data中的
+				值来决定的。
+				v-on 依据点击，点击了就调用toggleActive(item)函数，这个函数改变active的属性，如果active是false，
+				就改成true，如果是true，就改成false。
+	
+            -->
+			{{item.name}}<span>{{item.price}}</span></li>
+	</ul>
+	<p>Total:<span>{{total()}}</span></p>
+	
+</div>
+<script>
+	var demo=new Vue({
+		el:'#main',
+		data:{
+			items:[{
+				name:'baicai',
+				price:200,
+				active:true,
+			},
+			{
+				name:'doujiao',
+				price:300,
+				active:false,
+			},
+			
+			{name:'tudou',
+			price:220,
+			active:false,}]
+		},//, is necessary
+		methods:{
+			toggleActive: function(i){
+            i.active = !i.active;
+    	},
+    	// change active value， i是形参。
+			total:function(){
+				var total=0;
+				this.items.forEach(function(s){
+					if (s.active){
+					total+=s.price;
+					}
+					
+				})//forEach over at here
+				return total;
+				
+			}//total over at here
+			
+			
+		}//methods over at here
+		})//vue over at here
+		
+	
+		
+
+</script>
