@@ -1,7 +1,18 @@
 
 <!DOCTYPE html>
 <html lang="zh-CN">
+	<style>
+		.panel {
+			width:70%;
+			margin:0 auto;
+			margin-top: 200px;
+		}
+		.progress-bar {
+			height:500px;
+		}
+	</style>
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +42,8 @@
         <h3 class="text-muted">Yingxincui</h3>
         <nav>
           <ul class="nav nav-justified">
-            <li class="active"><a href="#">主页</a></li>
+
+            <li class="active"><a href="#" data-toggle='tooltip' data-placement="right" title='这是贺敏杰的主页'>主页</a></li>
             <li><a href="shuping.html">书评</a></li>
             <li><a href="riji.html">日记</a></li>
             <li><a href="jiaoxun.html">教训</a></li>
@@ -42,12 +54,12 @@
       </div>
       
       <div class='jumbotron'>
-      	<h1>记录成长点滴</h1>
+      	<h1>记录前端学习</h1>
       	<p>记录前端学习过程点滴~ 每一份辛苦都有收获
 </p>
       	<p><a class='btn btn-lg btn-success'>积少成多</a></p>
       </div>
-      
+     
       
       <div class='row'>
       	<div class='col-lg-4'>
@@ -62,13 +74,56 @@
       	</div>
       	<div class='col-lg-4'>
       		<h2>作品3</h2>
-      		<p>放电真不容易。难倒哭。好久不读书，总看今日头条，这不好。重新捡起多看。回归读书道路。</p>
+      		<p>Vue 实现小型书城.js</p>
       		<p><a class='btn btn-primary' href=''>View details</a></p>
+      	</div>
+      	<div class="rows">
+      		<div class='col-lg-4'>
+      			<h2>作品4</h2>
+      			<p>本人在千聊录制的javascript课程。</p>
+      			<p><a class='btn btn-primary' href="https://m.qlchat.com/live/850000156084838.htm">View details</a></p>
+      		</div>
+      		<div class='col-lg-4'>
+      			<h2>作品5</h2>
+      			<p>python爬虫爬取网易图片</p>
+      			<p><a class='btn btn-primary' href="https://m.qlchat.com/live/850000156084838.htm">View details</a></p>
+      		</div>
+      		<div class='col-lg-4'>
+      			<h2>作品6</h2>
+      			<p>Python进行自然语义分析</p>
+      			<p><a class='btn btn-primary' href="https://m.qlchat.com/live/850000156084838.htm">View details</a></p>
+      		</div>
       	</div>
       	
       </div>
+  <p></p>
+  <p></p>
+<div class='zhangwo panel panel-default'>
+	<div class="panel-heading">
+		<h1 class='panel-title'>技能习得</h1>
+	</div>
+	<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+    <span>html</span>
+  </div>
+</div>
+<div class='progress'>
+	<div class='progress-bar progress-bar-info' style="width:80%">
+		<span>css</span>
+	</div>
+</div>
+<div class='progress'>
+	<div class='progress-bar progress-bar-success' style="width:70%">
+		<span>Bootstrap</span>
+	</div>
+</div>
       
-
+<div class='progress'>
+	<div class='progress-bar progress-bar-danger' style="width:50%">
+		<span>vue</span>
+	</div>
+</div>
+</div>
       
       	<footer class='footer'>
       		<p>&copy; Yingxincui 2017,lnc<span>&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://github.com/yingxincui'>Github</a></span>
@@ -78,7 +133,6 @@
       	</footer>
 
     </div> <!-- /container -->
-
 
 
   </body>
