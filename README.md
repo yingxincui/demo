@@ -1,4 +1,5 @@
 # demo
+[Bing](https://yingxincui.github.io/demo/bing.html)<br>
 [最美应用](https://yingxincui.github.io/demo/zuimei.html)<br>
 [全选](https://yingxincui.github.io/demo/checkbox.html)<br>
 [js全选](https://yingxincui.github.io/demo/jscheckbox.html)<br>
